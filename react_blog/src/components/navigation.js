@@ -27,7 +27,7 @@ export default function Navigation() {
         <ul>
             { navLinks.map((link, index) => (
                 <li key={index}>
-                    {link.title}
+                    <Link to={link.path}>{link.title}</Link>
                 </li>
             ))}
         </ul>
