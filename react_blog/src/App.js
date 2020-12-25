@@ -11,5 +11,6 @@ function App() {
 
 export default App;
 
+// cd react_blog
 // yarn start
 // yarn add node-sass sass-loader
