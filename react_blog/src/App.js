@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import Navigation from './components/navigation'
+import Navigation from './components/common/navigation'
 import {BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom'
 import PageRenderer from './page-renderer';
 
@@ -29,3 +29,5 @@ export default App;
 // yarn start
 // yarn add node-sass sass-loader
 // yarn add react-router react-router-dom
+// yarn add antd @quasar/extras
+// yarn add moment
