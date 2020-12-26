@@ -29,7 +29,7 @@ export default function Navigation({user}) {
     return (
     <nav className="site-navigation" role="navigation">
         <span className="menu-title">React Blog</span>
-        <div className="menu-content-container">
+        <div className={ `menu-content-container ${menuActive && 'active'}` }>
             <ul>
                 { navLinks.map((link, index) => (
                     <li key={index}>
@@ -38,11 +38,11 @@ export default function Navigation({user}) {
                     ))
                 }
             </ul>
-            <span>
+            <span className="menu-avatar-container">
                 <SmileTwoTone size={38} twoToneColor='#00999b' />
                 <span className="menu-avatar-name">{`${user.firstName} ${user.lastName}`}</span>
             </span>
-            <i className="ionicons icon ion-ios-menu" onClick={() => setMenuActive(!menuActive)} />
         </div>
+        <i className="ionicons icon ion-ios-menu" onClick={() => setMenuActive(!menuActive)} />
     </nav>)
 }
