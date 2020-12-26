@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {Link} from 'react-router-dom'
-import { Avatar } from 'antd'
+import {
+    SmileTwoTone,
+  } from '@ant-design/icons';
 
 const navLinks = [
     {
@@ -21,7 +23,9 @@ const navLinks = [
     }
 ]
 
-export default function Navigation() {
+export default function Navigation({user}) {
+    const [menuActive, setMenuActive] = useState(false)
+
     return (
     <nav className="site-navigation" role="navigation">
         <span className="menu-title">React Blog</span>
@@ -34,7 +38,11 @@ export default function Navigation() {
                     ))
                 }
             </ul>
-            <Avatar src="http://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" size={38} />
+            <span>
+                <SmileTwoTone size={38} twoToneColor='#00999b' />
+                <span className="menu-avatar-name">{`${user.firstName} ${user.lastName}`}</span>
+            </span>
+            <i className="ionicons icon ion-ios-menu" onClick={() => setMenuActive(!menuActive)} />
         </div>
     </nav>)
 }

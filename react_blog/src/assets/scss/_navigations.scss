@@ -1,7 +1,7 @@
 .site-navigation {
     height: 65px;
     width: 100%;
-    background: white;
+    background: #cce1e1;
     display: flex;
     justify-content: space-between;
     color: $text-color;
@@ -23,6 +23,20 @@
             background: $background;
             border: 1px solid $border;
         }
+
+        .menu-avatar-name {
+            font-size: 16px;
+            margin-left: 15px;
+            color: #003839;
+        }
+
+        .ion-ios-menu {
+            font-size: 36px;
+            width: 65px;
+            align-items: center;
+            cursor: pointer;
+            display: none;
+        }
     }
 
     ul{
@@ -38,7 +52,7 @@
         a {
             text-decoration: none;
             padding: 0 20px 0 20px;
-            font-size: 20px;
+            font-size: 17px;
             color: $text-color;
 
             &:hover {
@@ -47,3 +61,4 @@
         }
     }
 }
+
