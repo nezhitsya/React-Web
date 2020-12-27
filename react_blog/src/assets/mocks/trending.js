@@ -8,7 +8,4 @@ export default [
         link: '#',
         image: '',
     },
-    {
-
-    },
 ]
