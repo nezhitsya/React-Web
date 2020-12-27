@@ -35,5 +35,5 @@ export default [
         categories: ['Trip', 'Spain'],
         link: '#',
         image: 'town.jpeg',
-    }
+    },
 ]
