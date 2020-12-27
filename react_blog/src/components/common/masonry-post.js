@@ -5,6 +5,7 @@ export default function MasonryPost({post, tagsOnTop}) {
 
     return (
         <a className="masonry-post overlay" style={style} href={post.link}>
+            <div className="image-text"></div>
         </a>
     )
 }
