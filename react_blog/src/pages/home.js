@@ -1,5 +1,5 @@
 import React from 'react'
-import {MasonryPost, PostMasonry} from '../components/common'
+import {MasonryPost, PostMasonry, PostGrid} from '../components/common'
 import trending from '../assets/mocks/trending'
 import featured from '../assets/mocks/featured'
 
@@ -27,8 +27,12 @@ const featuredConfig = {
 const mergeStyles = function(posts, config) {
     posts.forEach((post, index) => {
         post.style = config[index]
+        post.author = 'Dayeong Lee'
+        post.description = 'Lorem ipsum dolor sit amet'
     })
 }
+
+const recentPosts = [...trending, ...featured, ...featured]
 
 mergeStyles(trending, trendingConfig)
 mergeStyles(featured, featuredConfig)
