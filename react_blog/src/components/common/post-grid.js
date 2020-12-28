@@ -1,6 +1,6 @@
 import React, {useState, useMemo, useEffect} from 'react'
 import {Link} from 'react-router-dom'
-import {Pagination, Tag} from 'antd'
+import {Pagination} from 'antd'
 import {TagRow} from './'
 
 export default function PostGrid( {posts} ) {
@@ -12,7 +12,7 @@ export default function PostGrid( {posts} ) {
         const firstIndex = lastIndex - pageSize
 
         return posts.slice(firstIndex, lastIndex)
-    }, [current, pageSize])
+    }, [current, pageSize, posts])
 
     useEffect(() => {
         window.scroll({
