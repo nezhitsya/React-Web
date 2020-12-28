@@ -1,6 +1,6 @@
 import moment from 'moment'
 
-export default [
+const featured = [
     {
         title: 'Spain',
         date: moment().format('MMMM DD, YYYY'),
@@ -37,3 +37,5 @@ export default [
         image: 'town.jpeg',
     },
 ]
+
+export default featured;

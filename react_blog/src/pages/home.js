@@ -60,7 +60,7 @@ export default function Home() {
             </section>
             <section className="container">
                 <div className="row">
-                    <PostMasonry post={trending} colums={3} />
+                    <PostMasonry posts={trending} colums={3} />
                 </div>
             </section>
         </main>
