@@ -37,5 +37,3 @@ module.exports = [
         image: 'spain4.jpg',
     },
 ]
-
-export default trending;
