@@ -46,7 +46,7 @@ export default function PostGrid( {posts} ) {
                         <p className="description-text">
                             { post.description }
                         </p>
-                        <Link to={post.link}>Read More...</Link>
+                        <Link to={ post.link }>Read More...</Link>
                     </div>
                 ))}
             </section>
