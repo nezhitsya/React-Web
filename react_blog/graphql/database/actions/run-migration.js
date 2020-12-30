@@ -1,8 +1,8 @@
 const knex = require('../mysql')
 const promise = require('bluebird')
-const path = require('knex')
+const path = require('path')
 const fs = require('fs')
-const { resolve, reject } = require('bluebird')
+// const { resolve, reject } = require('bluebird')
 const db = knex.client.config.connection.database || null
 
 function replaceAll(str, delimiter, replacement) {
