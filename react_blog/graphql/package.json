@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "apollo-server-koa": "^2.19.1",
+    "bluebird": "^3.7.2",
     "dotenv": "^8.2.0",
     "graphql-tools": "^7.0.2",
     "knex": "^0.21.15",
