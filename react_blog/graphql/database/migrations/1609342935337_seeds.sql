@@ -32,8 +32,17 @@ VALUES
 
 INSERT INTO blog_posts (author_id, title, description, text, image, active, keyword1, keyword2, bg_src, bg_type)
 VALUES
-(1, 'Barcelona street', 'A picture taken while walking the streets of Barcelona.', '', 'road.jpg', 1, 'Spain', 'Trip', 'road.jpg', 'Image'),
-(1, 'Church in Barcelona', 'It is a beautiful church in Barcelona.', '', 'church.jpg', 1, 'Spain', 'Trip', 'church.jpg', 'Image')
+(1, 'Barcelona street', 'A picture taken while walking the streets of Barcelona.', '', 'road.jpeg', 1, 'Spain', 'Trip', 'road.jpeg', 'Image'),
+(1, 'Church in Barcelona', 'It is a beautiful church in Barcelona.', '', 'church.jpeg', 1, 'Spain', 'Trip', 'church.jpeg', 'Image'),
+(1, 'British beach', 'Share beautiful beach scenery.', '', 'sea.jpeg', 1, 'England', 'Trip', 'sea.jpeg', 'Image'),
+(1, 'Moscow architecture', 'Beautiful architecture in Moscow.', '', 'structure.jpeg', 1, 'Rusia', 'Trip', 'structure.jpeg', 'Image'),
+(1, 'Italian village', 'Narrow but beautiful italian alley.', '', 'town.jpeg', 1, 'Italy', 'Trip', 'town.jpg', 'Image'),
+(1, '', '.', '', '.jpg', 1, '', 'Trip', '.jpg', 'Image'),
+(1, '', '.', '', '.jpg', 1, '', 'Trip', '.jpg', 'Image'),
+(1, '', '.', '', '.jpg', 1, '', 'Trip', '.jpg', 'Image'),
+(1, '', '.', '', '.jpg', 1, '', 'Trip', '.jpg', 'Image'),
+(1, '', '.', '', '.jpg', 1, '', 'Trip', '.jpg', 'Image')
+
 
 INSERT INTO blog_post_comments (post_id, author_id, comment)
 VALUES
