@@ -12,3 +12,5 @@ let config = {
 }
 
 module.exports = require('knex')(config)
+
+// npm run run-migration

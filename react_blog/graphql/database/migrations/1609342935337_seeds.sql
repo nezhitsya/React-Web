@@ -41,7 +41,7 @@ VALUES
 (1, 'Tracking course', 'You can enjoy tracking in various countries, including Georgia and Spain.', '', 'tracking.jpeg', 1, 'Activity', 'Tracking', 'tracking.jpeg', 'Image'),
 (1, 'Paragliding', 'You can enjoy paragliding in several countries such as Switzerland and Brazil.', '', 'paragliding.jpeg', 1, 'Activity', 'Paragliding', 'paragliding.jpeg', 'Image'),
 (1, 'Mango!', 'Mango enjoyed in Taiwan.', '', 'mango.jpeg', 1, 'Food', 'Taiwan', 'mago.jpeg', 'Image'),
-(1, 'Baguette', 'Perfect lunch in France.', '', 'baguette.jpeg', 1, 'France', 'Food', 'baguette.jpeg', 'Image')
+(1, 'Baguette', 'Perfect lunch in France.', '', 'baguette.jpeg', 1, 'France', 'Food', 'baguette.jpeg', 'Image');
 
 
 INSERT INTO blog_post_comments (post_id, author_id, comment)
@@ -64,5 +64,3 @@ VALUES
 (8,6),
 (9,2),
 (9,3);
-
-npm run run-migration
