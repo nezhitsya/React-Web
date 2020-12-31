@@ -37,11 +37,11 @@ VALUES
 (1, 'British beach', 'Share beautiful beach scenery.', '', 'sea.jpeg', 1, 'England', 'Trip', 'sea.jpeg', 'Image'),
 (1, 'Moscow architecture', 'Beautiful architecture in Moscow.', '', 'structure.jpeg', 1, 'Rusia', 'Trip', 'structure.jpeg', 'Image'),
 (1, 'Italian village', 'Narrow but beautiful italian alley.', '', 'town.jpeg', 1, 'Italy', 'Trip', 'town.jpg', 'Image'),
-(1, '', '.', '', '.jpg', 1, '', 'Trip', '.jpg', 'Image'),
-(1, '', '.', '', '.jpg', 1, '', 'Trip', '.jpg', 'Image'),
-(1, '', '.', '', '.jpg', 1, '', 'Trip', '.jpg', 'Image'),
-(1, '', '.', '', '.jpg', 1, '', 'Trip', '.jpg', 'Image'),
-(1, '', '.', '', '.jpg', 1, '', 'Trip', '.jpg', 'Image')
+(1, 'The country I want to go', 'Small city in Greece.', '', 'city.jpeg', 1, 'Greece', 'Trip', 'city.jpeg', 'Image'),
+(1, 'Tracking course', 'You can enjoy tracking in various countries, including Georgia and Spain.', '', 'tracking.jpeg', 1, 'Activity', 'Tracking', 'tracking.jpeg', 'Image'),
+(1, 'Paragliding', 'You can enjoy paragliding in several countries such as Switzerland and Brazil.', '', 'paragliding.jpeg', 1, 'Activity', 'Paragliding', 'paragliding.jpeg', 'Image'),
+(1, 'Mango!', 'Mango enjoyed in Taiwan.', '', 'mango.jpeg', 1, 'Food', 'Taiwan', 'mago.jpeg', 'Image'),
+(1, 'Baguette', 'Perfect lunch in France.', '', 'baguette.jpeg', 1, 'France', 'Food', 'baguette.jpeg', 'Image')
 
 
 INSERT INTO blog_post_comments (post_id, author_id, comment)
