@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 import {Pagination} from 'antd'
 import {TagRow} from './'
 
-export default function PostGrid( {posts} ) {
+export default function PostGrid ({posts}) {
     const [pageSize, setPageSize] = useState(9)
     const [current, setCurrent] = useState(1)
 
@@ -16,7 +16,7 @@ export default function PostGrid( {posts} ) {
 
     useEffect(() => {
         window.scroll({
-            top: 500,
+            top: 0,
             left: 0,
             behavior: 'smooth'
         })
@@ -28,36 +28,38 @@ export default function PostGrid( {posts} ) {
                 {paginatedPosts.map((post, index) => (
                     <div className="post-container">
                         <figure>
-                            <Link to={post.link}>
-                                <img src={require(`../../assets/images/${ post.image }`)} alt={ post.image } />
+                            <Link to={`/post/${post?.id}`}>
+                                <img src={require(`../../assets/images/${post.image}`)} alt={post.image}/>
                             </Link>
                         </figure>
                         <TagRow tags={post.categories} />
-                        <h2>{ post.title }</h2>
+                        <h2>{post.title}</h2>
                         <p className="author-text">
                             <span>
-                                By : 
-                                <Link to={`./authors/${post.author}`} >{ post.author }</Link>
+                                By:
+                                <Link to={`/authors/${post.author}`} >
+                                    {post.author}
+                                </Link>
                             </span>
                             <span>
-                                - { post.date }
+                                - {post.date}
                             </span>
                         </p>
                         <p className="description-text">
-                            { post.description }
+                            {post.description}
                         </p>
-                        <Link to={ post.link }>Read More...</Link>
+                        <Link to={post.link}>Read More...</Link>
                     </div>
                 ))}
             </section>
             <Pagination
                 simple
                 showSizeChanger
-                onShowSizeChange={ setPageSize }
-                pageSize={ pageSize }
-                total={ posts.length }
-                defaultCurrent={ current }
-                onChange={ setCurrent }
+                onShowSizeChange={setPageSize}
+                pageSize={pageSize}
+                total={posts.length}
+                defaultCurrent={current}
+                onChange={setCurrent}
             />
         </section>
     )
