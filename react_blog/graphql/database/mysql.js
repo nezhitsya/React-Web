@@ -13,4 +13,5 @@ let config = {
 
 module.exports = require('knex')(config)
 
+// npm run create-migration -- --tableName=
 // npm run run-migration

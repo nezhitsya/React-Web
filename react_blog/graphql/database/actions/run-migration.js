@@ -29,14 +29,14 @@ fs.readdir(
                         if (err) reject(err)
                         return knex.raw(replaceAll(sql, '{}', db))
                         .then(resolve)
-                        .catch((err) => {throw new Error(err)})
+                        .catch((err) => {console.log(err)})
                     }
                 )
             })
         })
         .then(() => console.log("Migrations have run successfully."))
         .catch(err => {
-            throw new Error(err)
+            console.log(err)
         })
     }
 )

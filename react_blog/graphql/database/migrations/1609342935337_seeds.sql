@@ -28,7 +28,7 @@ VALUES
 ('Greece', 'Greece, officially the Hellenic Republic and also known as Hellas, is a country located in Southeast Europe.'),
 ('Taiwan', 'Taiwan (traditional Chinese, officially the Republic of China is a country in East Asia.'),
 ('Georgia', 'Georgia is a transcontinental country in the Caucasus region of Eurasia.'),
-('USA', 'The United States of America(USA), commonly known as the United States, or America, is a country primarily located in North America.')
+('USA', 'The United States of America(USA), commonly known as the United States, or America, is a country primarily located in North America.');
 
 INSERT INTO blog_posts (author_id, title, description, text, image, active, keyword1, keyword2, bg_src, bg_type)
 VALUES
