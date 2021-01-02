@@ -10,24 +10,28 @@ const navLinks = [
         path: '/'
     },
     {
-        title: 'Algorithms',
-        path: '/algos'
+        title: 'Trip',
+        path: '/trip'
     },
     {
-        title: 'Blog',
-        path: '/blog'
+        title: 'Activity',
+        path: '/activity'
     },
     {
-        title: 'Contact Us',
-        path: '/contact-us'
+        title: 'Food',
+        path: '/food'
     },
     {
         title: 'Login',
         path: '/login'
+    },
+    {
+        title: 'ETC',
+        path: '/etc'
     }
 ]
 
-export default function Navigation({user}) {
+export default function Navigation() {
     const [menuActive, setMenuActive] = useState(false)
 
     return (
@@ -44,7 +48,8 @@ export default function Navigation({user}) {
             </ul>
             <span className="menu-avatar-container">
                 <SmileTwoTone size={38} twoToneColor='#00999b' />
-                <span className="menu-avatar-name">{`${user.firstName} ${user.lastName}`}</span>
+                {/* <span className="menu-avatar-name">{`${user.firstName} ${user.lastName}`}</span> */}
+                <span className="menu-avatar-name">Dayeong Lee</span>
             </span>
         </div>
         <i className="ionicons icon ion-ios-menu" onClick={() => setMenuActive(!menuActive)} />
