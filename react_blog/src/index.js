@@ -5,11 +5,23 @@ import reportWebVitals from './reportWebVitals';
 import 'antd/dist/antd.css';
 import '@quasar/extras/ionicons-v4/ionicons-v4.css';
 
+import ApolloClient, { Apolloclient } from 'apollo-client';
+import { InMemoryCache } from 'apollo-cache-inmemory';
+import { ApolloProvider } from '@apollo/react-hooks';
+
+const cache = new InMemoryCache()
+const client = new ApolloClient({
+  cache,
+  link: 'http://localhost:4000/graphql'
+})
+
 import './assets/scss/base.scss'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ApolloProvider client={ client }>
+      <App />
+    </ApolloProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
