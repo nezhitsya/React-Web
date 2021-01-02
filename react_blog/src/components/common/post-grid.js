@@ -22,6 +22,8 @@ export default function PostGrid ({posts}) {
         })
     }, [current, pageSize])
 
+
+
     return (
         <section className="grid-pagination-container">
             <section className="post-grid container">
