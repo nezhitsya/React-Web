@@ -8,13 +8,19 @@ import '@quasar/extras/ionicons-v4/ionicons-v4.css';
 import './assets/scss/base.scss'
 
 import { ApolloClient } from 'apollo-client';
+import { HttpLink } from 'apollo-link-http';
 import { InMemoryCache } from 'apollo-cache-inmemory';
 import { ApolloProvider } from '@apollo/react-hooks';
 
 const cache = new InMemoryCache()
+
+const httpLink = new HttpLink({
+  url: 'http://localhost:3000/graphql'
+})
+
 const client = new ApolloClient({
   cache,
-  link: 'http://localhost:3000/graphql'
+  link: httpLink
 })
 
 ReactDOM.render(

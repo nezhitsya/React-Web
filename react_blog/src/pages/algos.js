@@ -14,6 +14,7 @@ export default function Algorithms({ history }) {
     })
 
     if (error) {
+        console.log(error)
         return 'Something went wrong.'
     }
 

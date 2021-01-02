@@ -10,6 +10,10 @@ const navLinks = [
         path: '/'
     },
     {
+        title: 'Algorithms',
+        path: '/algos'
+    },
+    {
         title: 'Blog',
         path: '/blog'
     },
