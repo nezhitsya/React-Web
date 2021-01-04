@@ -8,6 +8,8 @@ import Food from './pages/health'
 import Home from './pages/home'
 import Login from './pages/login'
 import ETC from './pages/web-dev'
+import EditPost from './pages/edit-post'
+import Post from './pages/post'
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
           <Route path='/food' component={Food} />
           <Route path='/login' component={Login} />
           <Route path="/etc" component={ETC} />
+          <Route path="/edit-post" component={EditPost} />
+          <Route path='/post/:id' component={Post} />
           <Route path='/' component={Home} />
           <Route component={() => 404} />
         </Switch>
