@@ -3,6 +3,10 @@ type Query {
     getPostsByCategories(cat_ids: [Int]): [Post]!
 }
 
+type Mutation {
+    createPost(data: PostInput): ID!
+}
+
 type Post {
     id: Int,
     title: String

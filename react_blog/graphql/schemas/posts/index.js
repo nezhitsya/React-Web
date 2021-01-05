@@ -15,19 +15,19 @@ const getPostsWithAuthors = cb =>
         )
         .catch(errorHandler)
 
-
         const authorMap = authors.reduce((map, author) => ({
             ...map,
             [author.id]: `${author.first_name} ${author.last_name}`
         }), {})
 
-        return posts.map(({categories, author_id, ...rest}, index) => ({
-            categories: categories.split(','),
-            ...rest,
-            author: authorMap[author_id]
-        })
-    )
-}
+        return posts.map(({categories, author_id, ...rest}, index) => 
+            ({
+                categories: categories.split(','),
+                ...rest,
+                author: authorMap[author_id]
+            })
+        )
+    }
 
 module.exports = {
     resolvers: {
@@ -37,12 +37,12 @@ module.exports = {
             ),
             getPostsByCategories: getPostsWithAuthors(
                 async ({cat_ids}) => await PostService.getPosts('default', cat_ids)
-            )
-            // getPost: async (parent, args) => PostService.getPost(args.id)
+            ),
+            getPost: async (parent, args) => PostService.getPost(args.id)
+        },
+        Mutation: {
+            createPost: async (parent, args) => PostService.createPost(args)
         }
-        // Mutation: {
-        //     createPost: async (parent, args) => PostService.createPost(args)
-        // }
     },
     schema: fs.readFileSync(
         path.resolve(
